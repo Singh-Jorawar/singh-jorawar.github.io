@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Video to Gaussian Splat | Your Name
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../../../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../css/project.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            YourName
+        </a>
+
+        <nav>
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/about/">
+                About
+            </a>
+
+            <a href="/projects/">
+                Projects
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     PROJECT HERO
+     ===================================================== -->
+
+<section class="project-hero">
+
+    <div class="container">
+
+        <p class="section-label">
+            Project · 01
+        </p>
+
+        <h1>
+            Video to<br>
+            Gaussian Splat
+        </h1>
+
+        <p class="project-subtitle">
+
+            An end-to-end pipeline that transforms
+            ordinary video footage into a reconstructed
+            3D Gaussian Splat.
+
+        </p>
+
+
+        <div class="project-meta">
+
+            <span>Python</span>
+
+            <span>PyTorch</span>
+
+            <span>COLMAP</span>
+
+            <span>SAM2</span>
+
+            <span>Depth Anything</span>
+
+            <span>LaMa</span>
+
+            <span>Gaussian Splatting</span>
+
+        </div>
+
+
+        <div class="project-actions">
+
+            <a
+                href="https://github.com/yourusername/your-repository"
+                target="_blank"
+                class="button button-primary"
+            >
+                GitHub →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECT CONTENT
+     ===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="project-content">
+
+
+            <h2>
+                Overview
+            </h2>
+
+            <p>
+                This project aims to create an automated
+                pipeline that takes a video as input and
+                produces a 3D Gaussian Splat representation
+                of the captured scene.
+            </p>
+
+            <p>
+                The system combines multiple computer vision
+                and 3D reconstruction techniques into a
+                single workflow.
+            </p>
+
+
+
+            <h2>
+                Pipeline
+            </h2>
+
+
+            <div class="pipeline">
+
+                <div class="pipeline-step">
+                    Video
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    Frame Extraction
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    Masking
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    Depth
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    Inpainting
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    COLMAP
+                </div>
+
+                <div class="pipeline-arrow">
+                    →
+                </div>
+
+                <div class="pipeline-step">
+                    Gaussian Splat
+                </div>
+
+            </div>
+
+
+
+            <h2>
+                Frame Extraction
+            </h2>
+
+            <p>
+                The input video is first converted into a
+                sequence of images. Frames can then be sampled
+                to reduce redundancy and computational cost.
+            </p>
+
+
+
+            <h2>
+                Object Masking
+            </h2>
+
+            <p>
+                Unwanted objects are identified and masked
+                using segmentation techniques. SAM2 can be
+                used to propagate masks through the sequence.
+            </p>
+
+
+
+            <h2>
+                Depth Estimation
+            </h2>
+
+            <p>
+                Depth information is estimated from the
+                extracted frames and used to improve the
+                reconstruction process.
+            </p>
+
+
+
+            <h2>
+                Image Inpainting
+            </h2>
+
+            <p>
+                Masked regions can be reconstructed using
+                image inpainting models before the images
+                are passed to the reconstruction stage.
+            </p>
+
+
+
+            <h2>
+                COLMAP Reconstruction
+            </h2>
+
+            <p>
+                COLMAP is used to estimate camera poses and
+                generate the sparse reconstruction required
+                for the subsequent Gaussian Splatting stage.
+            </p>
+
+
+
+            <h2>
+                Gaussian Splatting
+            </h2>
+
+            <p>
+                The reconstructed scene is then used to train
+                a Gaussian Splat representation, producing
+                a viewable 3D representation of the scene.
+            </p>
+
+
+
+            <h2>
+                Results
+            </h2>
+
+            <img
+                src="../../../assets/images/projects/gaussian-splat.jpg"
+                alt="Gaussian Splat result"
+            >
+
+
+            <h2>
+                Technologies
+            </h2>
+
+            <p>
+                Python · PyTorch · OpenCV · SAM2 ·
+                Depth Anything · LaMa · COLMAP ·
+                CUDA · Gaussian Splatting
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Your Name
+        </p>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/yourusername">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/yourusername/">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

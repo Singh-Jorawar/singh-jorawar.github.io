@@ -564,47 +564,127 @@ nav a:hover {
 
 }
 
+/* About */
 
-
-/* =====================================================
-   CONTACT
-   ===================================================== */
-
-.contact {
-
-    padding: 150px 0;
-
-    border-top: 1px solid var(--border);
-
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
+.about-text{
+    font-size: x-large;
+}
+.about-image {
+    width: 100%;
+}
+
+
+/* ==================== CONTACT ==================== */
+
+.contact-section {
+    padding-bottom: 8rem;
+}
 
 .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    margin-top: 2rem;
+}
 
-    text-align: center;
+.contact-intro {
+    max-width: 520px;
+}
 
+.contact-description {
+    margin-top: 1.5rem;
+    max-width: 500px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-link {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    align-items: center;
+
+    padding: 1.4rem 0;
+
+    border-bottom: 1px solid var(--border-color);
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        padding 0.25s ease,
+        color 0.25s ease;
+}
+
+.contact-link-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.contact-link-value {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.contact-link-arrow {
+    font-size: 1.4rem;
+    text-align: right;
+
+    transition:
+        transform 0.25s ease;
+}
+
+.contact-link:hover {
+    padding-left: 0.75rem;
+}
+
+.contact-link:hover .contact-link-value {
+    color: var(--accent-color);
+}
+
+.contact-link:hover .contact-link-arrow {
+    transform: translate(4px, -4px);
+    color: var(--accent-color);
 }
 
 
-.contact h2 {
+/* ==================== MOBILE ==================== */
 
-    font-size: clamp(3rem, 7vw, 6rem);
+@media (max-width: 768px) {
 
-    letter-spacing: -0.06em;
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 
-    margin-bottom: 20px;
+    .contact-link {
+        grid-template-columns: 80px 1fr 30px;
+    }
+
+    .contact-link-value {
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
 
 }
-
-
-.contact p:not(.section-label) {
-
-    color: var(--muted);
-
-    margin-bottom: 35px;
-
-}
-
 
 
 /* =====================================================
